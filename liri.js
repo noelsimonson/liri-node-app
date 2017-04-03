@@ -75,6 +75,7 @@ var getMeMovie = function(movieName) {
 var doWhatItSays = function() {
 fs.readFile('random.txt', 'utf8', function (err, data){
     if (err) throw err;
+
     var dataArr = data.split(',');
 
     if (dataArr.length == 2)  {
@@ -84,7 +85,7 @@ fs.readFile('random.txt', 'utf8', function (err, data){
     }
     
 });
-
+}
 //switch casees for user input
 var pick = function(caseData, functionData) {
     switch(caseData) {
